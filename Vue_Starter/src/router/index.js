@@ -6,7 +6,8 @@ import Full from '@/containers/Full'
 
 // Views
 import Dashboard from '@/views/Dashboard';
-import Sistemas from '@/views/Sistemas';
+import Usuario from '@/views/Usuario';
+import BloquearAcesso from '@/views/BloquearAcesso';
 
 Vue.use(Router)
 
@@ -17,7 +18,7 @@ export default new Router({
     routes: [{
         path: '/',
         redirect: '/dashboard',
-        name: 'Home',
+        name: 'Inicio',
         component: Full,
         children: [{
                 path: 'dashboard',
@@ -25,9 +26,14 @@ export default new Router({
                 component: Dashboard
             },
             {
-                path: 'sistemas',
-                name: 'Sistemas',
-                component: Sistemas
+                path: 'usuario',
+                name: 'Usuário',
+                component: Usuario
+            },
+            {
+              path: 'bloquear-acesso',
+              name: 'Bloquear Acesso',
+              component: BloquearAcesso
             }
         ]
     }]

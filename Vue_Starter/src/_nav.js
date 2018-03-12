@@ -5,9 +5,14 @@ export default {
             icon: 'icon-speedometer'
         },
         {
-            name: 'Sistemas',
-            url: '/sistemas',
-            icon: 'icon-puzzle'
+            name: 'Usuário',
+            url: '/usuario',
+            icon: 'icon-user-follow'
+        },
+        {
+          name: 'Bloquear Acesso',
+          url: '/bloquear-acesso',
+          icon: 'icon-ban'
         }
     ]
 }
